@@ -1,0 +1,16 @@
+<%- include ('../../includes/admin/header.ejs') %>
+    <h1>Mes articles</h1>
+    <form action="/admin/add_article" method="post">
+        <div class="ui form">
+            <div class="field">
+              <label>Title</label>
+              <textarea name="title"></textarea>
+            </div>
+            <div class="field">
+              <label>Text</label>
+              <textarea name="text"></textarea>
+            </div>
+            <button class="ui button" type="submit">Submit</button>
+          </div>
+    </form>
+    <%- include('../../includes/admin/footer.ejs') %>
